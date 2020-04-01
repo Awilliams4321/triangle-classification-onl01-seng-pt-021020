@@ -11,7 +11,7 @@ class Triangle
       raise TriangleError
     elsif @first_side > @second_side + @third_side
       raise TriangleError
-    elsif @second_side > @first_side + @third_side
+    elsif @first_side + @second_side < @third_side
       raise TriangleError
     elsif @first_side + @third_side < @second_side
       raise TriangleError
